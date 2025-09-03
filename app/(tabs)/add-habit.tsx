@@ -2,7 +2,7 @@ import { database, DATABASE_ID, HABITS_COLLECTION } from "@/lib/appwrite";
 import { useAuth } from "@/lib/auth-context";
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { ID } from "react-native-appwrite";
 import { Button, SegmentedButtons, TextInput, useTheme } from "react-native-paper";
 

@@ -28,9 +28,10 @@ export function AuthProvider({children} : {children:React.ReactNode}){
             setUser(session);
         } catch (error) {
             setUser(null);
-        }finally{
+        } finally {
+            setIsLoadingUser(false); 
         }
-    };
+        };
 
     const signUp = async (email:string, password:string) => {
         try{
